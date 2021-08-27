@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    border-style: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    color: #070707;
+}
+
+.container {
+    width: 63.2rem;
+    height: 49.6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -24.8rem 0 0 -31.6rem;
+    display: flex;
+}
+.photo {
+    position: relative;
+    width: 32rem;
+    background: url("images/taylor_swift.jpg") center;
+    background-size: cover;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 1;
+    overflow: hidden;        
+}
+.informations {
+    width: 31.2rem;
+    background: #EDDBDB;
+    border-radius: 0px 5px 5px 0px;
+}
+h1 {
+    font-size: 3.2rem;
+    margin: 3.3rem 5.3rem 1.5rem 2.1rem;
+}
+.informations > p, ul {
+    font-size: 1.6rem;
+    margin: 0 2.3rem 0 2.1rem;
+    padding: 0 0 1.875rem 0;
+}
+li {
+    padding-top: 2rem;
+}
+h2 {
+    font-size: 2.4rem;
+    margin: 1.5rem 5.3rem 0.4rem 2.1rem;
+}
+a {
+    padding: 1.5rem 5rem;
+    background: #E83838;
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.button {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph_hover {
+    position: absolute;
+    width: 32rem;
+    bottom: -10rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background: #E83838;
+    padding: 0.8rem;
+    z-index: 2;
+    border-radius: 0 0 0 5px;
+}
+.photo:hover .paragraph_hover {
+    bottom: 0;
+    transition-duration: 0.5s;
+}
+a:hover {
+    padding: 2rem 6rem;
+}
+
